@@ -36,3 +36,7 @@ a {
     text-decoration: none;
     text-decoration-color: white;
 }
+.navbar-list li a:hover {
+    background-color: aliceblue;
+    color: black;
+}
