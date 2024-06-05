@@ -1,6 +1,6 @@
 body{
     background-color: aliceblue;
-
+    font-family: "Poppins", sans-serif;
 }
 header{
     background-color: aliceblue;
@@ -8,4 +8,31 @@ header{
     text-align: center;
     font-size: 30px;
     color: black;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+
+nav, .nav-links {
+    display: flex;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
 }
