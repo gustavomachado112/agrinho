@@ -1,15 +1,7 @@
-body{
-    background-color: aliceblue;
-    font-family: "Poppins", sans-serif;
-}
 header{
-    background-color: aliceblue;
-    padding: 30px;
-    text-align: center;
-    font-size: 30px;
-    color: black;
+    background-color: rgb(1, 92, 1);
+    padding: 10px;
 }
-
 nav {
     justify-content: space-around;
     align-items: center;
@@ -39,4 +31,7 @@ a {
 .navbar-list li a:hover {
     background-color: aliceblue;
     color: red;
+}
+.log{
+    width: 150px;
 }
