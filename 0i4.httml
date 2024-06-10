@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>agrinho.com</title>
+</head>
+      
+<header>
+     
+    <nav id="desktop-nav">
+        <img class="log" src="https://i.ibb.co/mcDvsQy/eco-removebg-preview.png" alt="eco-removebg-preview">
+        <div class="logo">ECO NATURE</div>
+        <div>
+          <ul class="nav-links">
+                <li><a href="index.html">home</a></li>
+            <li><a href="OI1.html">About</a></li>
+            <li><a href="oi2.html">Experience</a></li>
+            <li><a href="oi1.html">Projects</a></li>
+           
+          </ul>
+
+        </div>
+      </nav>
+
+ 
+</header>
+
+
+<body>
+</body>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</html>
