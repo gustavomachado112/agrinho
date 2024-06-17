@@ -41,6 +41,13 @@ a {
     width: 150px;
 }
 body{
-    padding;0 ;
+    padding:0 ;
     margin: 0;
+}
+footer {
+    background-color: rgb(1, 92, 1);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
