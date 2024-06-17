@@ -44,3 +44,34 @@ body{
     padding;0 ;
     margin: 0;
 }
+ /* Estilo para o rodapé */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Estilo para o link da imagem */
+  .github-link img {
+    width: 30px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-left: 10px; /* Espaço à esquerda da imagem */
+    vertical-align: middle;
+  }
+
+  /* Estilo para o link do GitHub */
+  .github-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* Estilo para o hover do link do GitHub */
+  .github-link a:hover {
+    text-decoration: underline;
+  }
