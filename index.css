@@ -57,7 +57,7 @@ body {
 .main-title {
     text-align: center;
     margin: 20px 0;
-    font-size: 2rem;
+    font-size: 1.5rem; /* Ajuste do tamanho da fonte */
     font-family: "Acme", sans-serif;
 }
 
