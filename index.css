@@ -1,10 +1,13 @@
-/* Estilos para o cabeçalho */
 header {
     background-color: rgb(1, 92, 1);
     padding: 0 20px;
-    display: flex; /* Adiciona display flex para alinhar itens horizontalmente */
-    justify-content: space-between; /* Distribui os itens igualmente */
-    align-items: center; /* Alinha itens verticalmente */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 17vh;
 }
 
 .logo-container {
@@ -37,71 +40,79 @@ a {
     font-family: "Acme", sans-serif;
 }
 
-/* Estilos para a área verde */
-.green-area {
-    background-color: rgb(1, 92, 1);
-    color: white;
-    padding: 20px;
+
+.navbar-list li a:hover {
+    background-color: aliceblue;
+    color: red;
 }
 
-/* Estilos para o conteúdo do container */
-.container {
-    text-align: center; /* Centraliza o conteúdo dentro do container */
-    margin-top: 20px; /* Margem superior para separar do cabeçalho e da área verde */
+.log {
+    width: 150px;
 }
 
-/* Estilos para os slides de imagens */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto; /* Centraliza horizontalmente */
+body {
+    padding: 0;
+    margin: 0;
 }
 
-.comidaSlides {
-    display: none;
-    width: 100%; /* Garante que a imagem ocupe toda a largura do container */
-}
-
-img {
-    vertical-align: middle;
-}
-
-/* Efeito de fade */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-/* Estilos para o rodapé */
 footer {
     background-color: rgb(1, 92, 1);
     text-align: center;
-    color: white;
-    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .social-icons {
-    margin-top: 10px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 0.5rem;
 }
 
-.social-icons a {
-    margin-right: 10px;
-}
-
-.social-icons img {
+.icon {
     width: 30px;
     height: 30px;
 }
 
+.container {
+            text-align: center; /* Centraliza o conteúdo dentro do container */
+            margin-top: 20px; /* Margem superior para separar do cabeçalho */
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto; /* Centraliza horizontalmente */
+        }
+
+        .comidaSlides {
+            display: none;
+            width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Efeito de fade */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
