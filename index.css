@@ -57,14 +57,15 @@ footer {
     width: 100%;
     padding: 1rem 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 0 2rem;
 }
 
 .social-icons {
     display: flex;
     gap: 1rem;
+    justify-content: center;
+    margin-top: 0.5rem;
 }
 
 .icon {
