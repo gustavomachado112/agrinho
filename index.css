@@ -10,6 +10,11 @@ nav {
     height: 17vh;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     font-size: 50px;
     color: white;
