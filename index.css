@@ -1,7 +1,7 @@
-header{
+header {
     background-color: rgb(1, 92, 1);
-    
 }
+
 nav {
     justify-content: space-around;
     align-items: center;
@@ -15,16 +15,15 @@ nav {
 }
 
 .nav-links {
+    display: flex;
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
     color: white;
 }
 
-
-nav, .nav-links {
-    display: flex;
-    color: white;
+.nav-links li {
+    display: inline;
 }
 
 a {
@@ -33,24 +32,44 @@ a {
     text-decoration-color: white;
     font-family: "Acme", sans-serif;
 }
+
 .navbar-list li a:hover {
     background-color: aliceblue;
     color: red;
 }
-.log{
+
+.log {
     width: 150px;
 }
-body{
-    padding:0 ;
+
+body {
+    padding: 0;
     margin: 0;
 }
+
 footer {
     background-color: rgb(1, 92, 1);
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
 }
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
