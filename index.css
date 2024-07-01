@@ -79,34 +79,40 @@ footer {
     height: 30px;
 }
 
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
+.container {
+            text-align: center; /* Centraliza o conteúdo dentro do container */
+            margin-top: 20px; /* Margem superior para separar do cabeçalho */
+        }
 
-.comidaSlides {
-    display: none;
-}
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto; /* Centraliza horizontalmente */
+        }
 
-img {
-    vertical-align: middle;
-}
+        .comidaSlides {
+            display: none;
+            width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+        }
 
-/* Efeito de fade */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
+        img {
+            vertical-align: middle;
+        }
 
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
+        /* Efeito de fade */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
 
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
