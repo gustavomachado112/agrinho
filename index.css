@@ -87,13 +87,15 @@ a {
     margin: 0 auto 20px;
     display: block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+    border-radius: 15px; /* Arredondamento das bordas */
 }
 
 .content-text {
     font-size: 1.2rem;
     margin: 0 auto;
     max-width: 800px;
-    text-align: left;
+    text-align: justify; /* Justifica o texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
     font-family: "Acme", sans-serif;
 }
 
@@ -133,11 +135,13 @@ footer {
     display: none;
     width: 100%; /* Garante que a imagem ocupe toda a largura do container */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+    border-radius: 15px; /* Arredondamento das bordas */
 }
 
 img {
     vertical-align: middle;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+    border-radius: 15px; /* Arredondamento das bordas */
 }
 
 /* Efeito de fade */
@@ -156,4 +160,8 @@ img {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+.footer-container {
+    flex-shrink: 0;
 }
