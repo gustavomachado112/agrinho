@@ -86,6 +86,7 @@ a {
     height: auto;
     margin: 0 auto 20px;
     display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
 }
 
 .content-text {
@@ -131,10 +132,12 @@ footer {
 .comidaSlides {
     display: none;
     width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
 }
 
 img {
     vertical-align: middle;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
 }
 
 /* Efeito de fade */
