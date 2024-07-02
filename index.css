@@ -13,9 +13,11 @@ body {
 }
 
 .page-container {
-    flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 header {
@@ -78,6 +80,12 @@ a {
 .content-section {
     text-align: center;
     margin: 20px;
+}
+
+.content-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: "Acme", sans-serif;
 }
 
 .content-image {
