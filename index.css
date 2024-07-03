@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url('Default_A_serene_website_background_depicted_in_digital_art_sh_1.jpg')
 }
 
 .page-container {
