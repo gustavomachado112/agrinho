@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: rgb(1, 92, 1);
+    background-color: rgba(1, 92, 1, 0.9); /* Cor do cabeçalho com transparência */
     padding: 10px 20px;
     width: 100%;
     box-sizing: border-box;
@@ -48,7 +48,7 @@ header {
 .nav-links li a {
     color: white;
     text-decoration: none;
-    font-family: "Roboto", sans-serif; /* Estilo de fonte diferente para o menu */
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     padding: 10px;
     border-radius: 5px;
@@ -64,14 +64,14 @@ header {
 }
 
 .form-container {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Container com fundo branco e transparência */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px; /* Aumentando o tamanho do container */
+    width: 400px;
     text-align: center;
     margin-top: 20px;
-    font-family: "Arial", sans-serif; /* Estilo de fonte diferente para o conteúdo do suporte */
+    font-family: "Arial", sans-serif;
 }
 
 h1 {
@@ -112,7 +112,7 @@ button:active {
 }
 
 footer {
-    background-color: rgb(1, 92, 1);
+    background-color: rgba(1, 92, 1, 0.9); /* Rodapé com cor e transparência */
     text-align: center;
     width: 100%;
     padding: 10px 0;
