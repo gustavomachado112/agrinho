@@ -48,7 +48,7 @@ header {
 .nav-links li a {
     color: white;
     text-decoration: none;
-    font-family: "Acme", sans-serif;
+    font-family: "Roboto", sans-serif; /* Estilo de fonte diferente para o menu */
     font-size: 18px;
     padding: 10px;
     border-radius: 5px;
@@ -68,9 +68,10 @@ header {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 400px; /* Aumentando o tamanho do container */
     text-align: center;
     margin-top: 20px;
+    font-family: "Arial", sans-serif; /* Estilo de fonte diferente para o conteúdo do suporte */
 }
 
 h1 {
