@@ -4,22 +4,23 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    flex-direction: column; /* Adicionado para permitir que o footer fique fixo embaixo */
 }
 
 header {
-    background-color: rgba(1, 92, 1, 0.9); /* Cor do cabeçalho com transparência */
-    padding: 10px 20px;
+    background-color: rgb(1, 92, 1);
+    padding: 0 20px;
     width: 100%;
-    box-sizing: border-box;
 }
 
-#desktop-nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 17vh;
 }
 
 .logo-container {
@@ -27,16 +28,18 @@ header {
     align-items: center;
 }
 
-.logo {
-    font-size: 24px;
-    color: white;
-    font-family: "Acme", sans-serif;
-    margin-left: 10px;
+.log {
+    width: 150px; /* Ajuste do tamanho do logo */
 }
 
-/* CSS para o menu */
+.logo {
+    font-size: 50px;
+    color: white;
+    font-family: "Acme", sans-serif;
+    margin-left: 20px;
+}
+
 .nav-links {
-    font-family: "Acme", sans-serif; /* Aplica a fonte Acme */
     display: flex;
     list-style: none;
     font-size: 1.5rem;
@@ -44,27 +47,19 @@ header {
     margin-left: auto; /* Move os links para a direita */
 }
 
-
 .nav-links li {
     display: inline;
 }
 
-.nav-links li a {
-    color: white;
+a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-family: "Acme", sans-serif; /* Fonte ajustada para o menu */
 }
 
-.nav-links li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.log {
-    width: 40px;
+.navbar-list li a:hover {
+    background-color: aliceblue;
+    color: red;
 }
 
 .form-container {
@@ -72,10 +67,9 @@ header {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 500px; /* Aumentado para maior largura */
     text-align: center;
-
-
+    margin-top: 20px; /* Adicionado para separar o formulário do topo */
 }
 
 h1 {
@@ -102,7 +96,6 @@ button {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 button:active {
@@ -115,22 +108,24 @@ button:active {
     font-weight: bold;
 }
 
+/* Novo CSS para o rodapé fixo */
 footer {
-    background-color: rgba(1, 92, 1, 0.9); /* Rodapé com cor e transparência */
+    background-color: rgb(1, 92, 1);
     text-align: center;
     width: 100%;
-    padding: 10px 0;
-    margin-top: auto;
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 0.5rem;
 }
 
 .icon {
