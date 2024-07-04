@@ -4,10 +4,9 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    flex-direction: column; /* Adicionado para permitir que o footer fique fixo embaixo */
+    min-height: 100vh;
 }
 
 header {
@@ -26,10 +25,6 @@ nav {
 .logo-container {
     display: flex;
     align-items: center;
-}
-
-.log {
-    width: 150px; /* Ajuste do tamanho do logo */
 }
 
 .logo {
@@ -54,7 +49,7 @@ nav {
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-family: "Acme", sans-serif; /* Fonte ajustada para o menu */
+    font-family: "Acme", sans-serif;
 }
 
 .navbar-list li a:hover {
@@ -62,14 +57,18 @@ a {
     color: red;
 }
 
+.log {
+    width: 150px; /* Ajuste o tamanho do logotipo */
+}
+
 .form-container {
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com 80% de transparência */
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparente */
+    padding: 40px; /* Aumenta o padding */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 500px; /* Aumentado para maior largura */
+    width: 500px; /* Aumenta a largura */
     text-align: center;
-    margin-top: 20px; /* Adicionado para separar o formulário do topo */
+    margin-top: 20px;
 }
 
 h1 {
@@ -108,7 +107,6 @@ button:active {
     font-weight: bold;
 }
 
-/* Novo CSS para o rodapé fixo */
 footer {
     background-color: rgb(1, 92, 1);
     text-align: center;
