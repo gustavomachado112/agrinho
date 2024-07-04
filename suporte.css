@@ -4,10 +4,67 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    flex-direction: column; /* Adicionado para permitir que o footer fique fixo embaixo */
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(1, 92, 1, 0.9); /* Cor do cabeçalho com transparência */
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-family: "Acme", sans-serif;
+    margin-left: 10px;
+}
+
+/* CSS para o menu */
+.nav-links {
+    font-family: "Acme", sans-serif; /* Aplica a fonte Acme */
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+    gap: 2rem;
+    margin-left: auto; /* Move os links para a direita */
+}
+
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.log {
+    width: 40px;
 }
 
 .form-container {
@@ -15,9 +72,10 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 500px; /* Aumentado para maior largura */
+    width: 300px;
     text-align: center;
-    margin-top: 20px; /* Adicionado para separar o formulário do topo */
+
+
 }
 
 h1 {
@@ -44,6 +102,7 @@ button {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:active {
@@ -56,24 +115,22 @@ button:active {
     font-weight: bold;
 }
 
-/* Novo CSS para o rodapé fixo */
 footer {
-    background-color: rgb(1, 92, 1);
+    background-color: rgba(1, 92, 1, 0.9); /* Rodapé com cor e transparência */
     text-align: center;
     width: 100%;
-    padding: 1rem 0;
+    padding: 10px 0;
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
-    bottom: 0;
 }
 
 .social-icons {
     display: flex;
-    gap: 1rem;
+    gap: 10px;
     justify-content: center;
-    margin-top: 0.5rem;
+    margin-top: 5px;
 }
 
 .icon {
