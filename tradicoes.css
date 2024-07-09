@@ -1,1 +1,183 @@
+/* Reset de margem e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    }
 
+    
+    body {
+    padding: 0;
+    margin: 0;
+    font-family: "Acme", sans-serif;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+header {
+    background-color: rgb(1, 92, 1);
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 17vh;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 50px;
+    color: white;
+    font-family: "Acme", sans-serif;
+    margin-left: 20px;
+}
+
+/* CSS para o menu */
+.nav-links {
+    font-family: "Acme", sans-serif; /* Aplica a fonte Acme */
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+    gap: 2rem;
+    margin-left: auto; /* Move os links para a direita */
+}
+
+
+.nav-links li {
+    display: inline;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: "Acme", sans-serif;
+}
+
+.navbar-list li a:hover {
+    background-color: aliceblue;
+    color: red;
+}
+
+.log {
+    width: 150px;
+}
+
+.main-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5rem; /* Ajuste do tamanho da fonte */
+    font-family: "Lobster", cursive;
+}
+
+.content-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.content-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: "Acme", sans-serif;
+}
+
+.content-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+    border-radius: 15px; /* Arredondamento das bordas */
+}
+
+.content-text {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify; /* Justifica o texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    font-family: "Acme", sans-serif;
+}
+
+footer {
+    background-color: rgb(1, 92, 1);
+    text-align: center;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    text-align: center; /* Centraliza o conteúdo dentro do container */
+    margin-top: 20px; /* Margem superior para separar do cabeçalho */
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto; /* Centraliza horizontalmente */
+}
+
+.comidaSlides {
+    display: none;
+    width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+    border-radius: 15px; /* Arredondamento das bordas */
+}
+
+img {
+    vertical-align: middle;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+    border-radius: 15px; /* Arredondamento das bordas */
+}
+
+/* Efeito de fade */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.footer-container {
+    flex-shrink: 0;
+}
