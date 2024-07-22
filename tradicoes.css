@@ -29,12 +29,8 @@ header {
     padding: 0 20px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 17vh;
-}
+
+
 
 .logo-container {
     display: flex;
@@ -48,20 +44,10 @@ nav {
     margin-left: 20px;
 }
 
-/* CSS para o menu */
-.nav-links {
-    font-family: "Acme", sans-serif; /* Aplica a fonte Acme */
-    display: flex;
-    list-style: none;
-    font-size: 1.5rem;
-    gap: 2rem;
-    margin-left: auto; /* Move os links para a direita */
-}
 
 
-.nav-links li {
-    display: inline;
-}
+
+
 
 a {
     color: rgb(255, 255, 255);
