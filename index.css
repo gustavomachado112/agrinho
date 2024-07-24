@@ -13,13 +13,14 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+        
 }
 
 
 
 
 header {
-    background-color: rgb(1, 92, 1);
+    background-color: #F5DEB3;
     padding: 0 20px;
 }
 
