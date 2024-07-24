@@ -76,6 +76,10 @@ a {
 h1 {
     margin-bottom: 20px;
 }
+p{
+color: aliceblue;
+}
+
 
 label {
     display: block;
