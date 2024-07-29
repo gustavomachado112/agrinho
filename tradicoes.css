@@ -2,8 +2,32 @@
 * {
     margin: 0;
     padding: 0;
-    }
-/* Animação de rolagem */
+}
+
+/* Animação de Fade para a introdução de novos elementos */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Adicionar espaço superior e inferior entre os textos */
+.content-section {
+    margin: 40px 0; /* Aumente a margem superior e inferior */
+}
+
+/* Estilos adicionais para animação de rolagem */
 .scroll-animation {
     opacity: 0;
     transform: translateY(50px);
@@ -15,8 +39,7 @@
     transform: translateY(0);
 }
 
-    
-    body {
+body {
     padding: 0;
     margin: 0;
     font-family: "Acme", sans-serif;
@@ -38,23 +61,10 @@
     display: inline;
 }
 
-
-
-.page-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
 header {
     background-color: rgb(1, 92, 1);
     padding: 0 20px;
 }
-
-
-
 
 .logo-container {
     display: flex;
@@ -67,11 +77,6 @@ header {
     font-family: "Acme", sans-serif;
     margin-left: 20px;
 }
-
-
-
-
-
 
 a {
     color: rgb(255, 255, 255);
@@ -93,11 +98,6 @@ a {
     margin: 20px 0;
     font-size: 1.5rem; /* Ajuste do tamanho da fonte */
     font-family: "Lobster", cursive;
-}
-
-.content-section {
-    text-align: center;
-    margin: 20px;
 }
 
 .content-subtitle {
@@ -132,8 +132,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
 
 .social-icons {
@@ -170,26 +168,4 @@ img {
     vertical-align: middle;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
     border-radius: 15px; /* Arredondamento das bordas */
-}
-
-/* Efeito de fade */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-.footer-container {
-    flex-shrink: 0;
 }
