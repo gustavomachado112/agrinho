@@ -126,11 +126,13 @@ footer {
     gap: 1rem;
     justify-content: center;
     margin-top: 0.5rem;
+    width:50px;
 }
 
 .rodape {
     font-size: 20px;
 }
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
