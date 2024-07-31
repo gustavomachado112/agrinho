@@ -2,31 +2,10 @@
 * {
     margin: 0;
     padding: 0;
-}
+    }
 
-/* Animação de rolagem */
-.scroll-animation {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.scroll-animation.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Animação de fade */
-.fade {
-    animation: fade 1.5s ease-out;
-}
-
-@keyframes fade {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-body {
+    
+    body {
     padding: 0;
     margin: 0;
     font-family: "Acme", sans-serif;
@@ -36,17 +15,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    font-size: 1.5rem;
-    gap: 2rem;
-    margin-left: auto;
-}
-
-.nav-links li {
-    display: inline;
-}
 
 .page-container {
     display: flex;
@@ -61,6 +29,9 @@ header {
     padding: 0 20px;
 }
 
+
+
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -72,6 +43,11 @@ header {
     font-family: "Acme", sans-serif;
     margin-left: 20px;
 }
+
+
+
+
+
 
 a {
     color: rgb(255, 255, 255);
@@ -132,6 +108,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
 }
 
 .social-icons {
@@ -149,4 +127,45 @@ footer {
 .container {
     text-align: center; /* Centraliza o conteúdo dentro do container */
     margin-top: 20px; /* Margem superior para separar do cabeçalho */
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto; /* Centraliza horizontalmente */
+}
+
+.comidaSlides {
+    display: none;
+    width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+    border-radius: 15px; /* Arredondamento das bordas */
+}
+
+img {
+    vertical-align: middle;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
+    border-radius: 15px; /* Arredondamento das bordas */
+}
+
+/* Efeito de fade */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.footer-container {
+    flex-shrink: 0;
 }
