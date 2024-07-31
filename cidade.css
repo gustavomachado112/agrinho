@@ -57,6 +57,7 @@ a {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 300%; /* 100% para cada imagem, 3 imagens = 300% */
+    height:300%
 }
 .carousel-slide img {
     width: 33.33%; /* Cada imagem ocupa 1/3 do contêiner */
