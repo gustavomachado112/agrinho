@@ -1,97 +1,105 @@
-
- {
-    margin: 0;
-    padding: 0px;
-    }
-
-    
-    body {
-    padding: 0;
-    margin: 0;
-    font-family: "Acme", sans-serif;
-    background-image: url('');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color:	#F5DEB3;
+body{
+ padding:0;
+margin:0;
 }
 
 
-
-
-header {
+header{
     background-color: rgb(1, 92, 1);
-    padding: 0 20px;
+        padding: 0 20px;
+    margin:0;
+
 }
-
-
-
-.logo-container {
-    display: flex;
+nav {
+    justify-content: space-around;
     align-items: center;
+    height: 17vh;
 }
 
 .logo {
     font-size: 50px;
     color: white;
     font-family: "Acme", sans-serif;
-    }
-    
-    
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    color: white;
+}
 
 
-
+nav, .nav-links {
+    display: flex;
+    color: white;
+}
 
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    text-decoration-color: white;
     font-family: "Acme", sans-serif;
 }
-
 .navbar-list li a:hover {
     background-color: aliceblue;
     color: red;
 }
-
-.log {
+.log{
     width: 150px;
 }
 
-.main-title {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 1.5rem; 
-    font-family: "Lobster", cursive;
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto; /* Centralizando o container */
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-.content-section {
-    text-align: center;
-    margin: 20px;
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; 
 }
 
-.content-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    font-family: "Acme", sans-serif;
+.carousel-slide img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
 
-.content-image {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    margin: 0 auto 20px;
-    display: block;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    border-radius: 15px; 
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 18px;
+    border-radius: 50%;
 }
 
-.content-text {
-    font-size: 1.2rem;
-    margin: 0 auto;
-    max-width: 800px;
-    text-align: justify; 
-    line-height: 1.6; 
-    font-family: "Acme", sans-serif;
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+
+
+h1{
+    font-family: "Acme", sans-serif; 
+}
+.texto{
+    font-family:"Acme", sans-serif; 
+    font-size: 25px;
+    margin: 400px;
 }
 
 footer {
@@ -103,6 +111,8 @@ footer {
     align-items: center;
 
 }
+
+
 .social-icons {
     display: flex;
     gap: 1rem;
@@ -113,86 +123,10 @@ footer {
 .icon {
     width: 30px;
     height: 30px;
+  
 }
-
-.container {
-    text-align: center; 
-    margin-top: 20px; 
-}
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto; 
-}
-
-.comidaSlides {
-    display: none;
-    width: 100%; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    border-radius: 15px; 
-}
-
-img {
-    vertical-align: middle;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    border-radius: 15px; 
+.rodape{
+    color: white;
 }
 
 
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-.footer-container {
-    flex-shrink: 0;
-    margin: 0%;
-    padding: 0%;
-}
-.botao12{
-background-color: #4CAF50; /* Cor de fundo */
-color: white; /* Cor do texto */
-padding: 10px 20px; /* Espaçamento interno */
-border: none; /* Remove a borda padrão */
-border-radius: 5px; /* Borda arredondada */
-cursor: pointer; /* Cursor ao passar por cima */
-text-align: center; /* Centraliza o texto */
-text-decoration: none; /* Remove sublinhado */
-display: inline-block; /* Exibe como bloco inline */
-font-size: 16px; /* Tamanho da fonte */
-transition-duration: 0.4s; /* Duração da transição */
-box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Sombra */
-}
-.botao1{
-    background-color: #4CAF50; /* Cor de fundo */
-color: white; /* Cor do texto */
-padding: 10px 20px; /* Espaçamento interno */
-border: none; /* Remove a borda padrão */
-border-radius: 5px; /* Borda arredondada */
-cursor: pointer; /* Cursor ao passar por cima */
-position: relative;
-left: 20%; 
-/* Centraliza o texto */
-text-decoration: none; /* Remove sublinhado */
-display: inline-block; /* Exibe como bloco inline */
-font-size: 16px; /* Tamanho da fonte */
-transition-duration: 0.4s; /* Duração da transição */
-box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Sombra */
-
-}
-.oi{
-    color:white
-}
