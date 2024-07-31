@@ -161,16 +161,22 @@ footer {
 .materia{
     display: flex;
     flex-direction:row;
-    gap: 300px;
+    gap: 150px;
+    margin: 10px;
+
 }
 
 .comida{
      width:500px;
     height:500px;
+    margin: 60px; 
 }
 .descricao{
     display: flex;
     flex-direction:row;
-    gap: 250px;
+    gap: 200px;
     font-size:20px ;
+    margin: 60px;
+    position: relative;
+    bottom: 50px;
 }
