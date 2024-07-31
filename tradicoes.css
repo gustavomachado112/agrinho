@@ -24,11 +24,51 @@
     padding: 20px;
 }
 
-header {
+
+header{
     background-color: rgb(1, 92, 1);
-    padding: 0 20px;
+        padding: 0 20px;
+    margin:0;
+
+}
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
 }
 
+.logo {
+    font-size: 50px;
+    color: white;
+    font-family: "Acme", sans-serif;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+nav, .nav-links {
+    display: flex;
+    color: white;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-decoration-color: white;
+    font-family: "Acme", sans-serif;
+}
+.navbar-list li a:hover {
+    background-color: aliceblue;
+    color: red;
+}
+.log{
+    width: 150px;
+}
 
 
 
