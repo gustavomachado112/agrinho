@@ -1,18 +1,20 @@
-header {
-    background-color: rgb(1, 92, 1);
-    padding: 10px 20px; /* Adicionei um pouco de padding para melhor espaçamento */
-    margin: 0;
-}
 
+
+
+header{
+    background-color: rgb(1, 92, 1);
+        padding: 0 20px;
+    margin:0;
+
+}
 nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
-    display: flex; /* Garantindo que o display seja flex para o alinhamento funcionar */
 }
 
 .logo {
-    font-size: 2.5rem; /* Ajustando o tamanho da fonte do logo */
+    font-size: 50px;
     color: white;
     font-family: "Acme", sans-serif;
 }
@@ -22,49 +24,46 @@ nav {
     list-style: none;
     font-size: 1.5rem;
     color: white;
-    display: flex; /* Para alinhar os itens corretamente */
 }
 
-.nav-links li {
-    margin-right: 1rem; /* Ajustando o espaçamento entre os itens do menu */
-}
 
-.nav-links a {
+nav, .nav-links {
+    display: flex;
     color: white;
-    text-decoration: none;
-    font-family: "Acme", sans-serif;
-    transition: all 0.3s ease; /* Transição suave para o hover */
 }
 
-.nav-links a:hover {
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-decoration-color: white;
+    font-family: "Acme", sans-serif;
+}
+.navbar-list li a:hover {
+    background-color: aliceblue;
     color: red;
 }
-
-.log {
+.log{
     width: 150px;
 }
 
-.carousel-container {
+ .carousel-container {
     position: relative;
     width: 80%;
-    margin: 0 auto; /* Centralizando o container */
+    width: 100%;
     height: 600px;
     overflow: hidden;
     border-radius: 10px;
 }
-
 .carousel-slide {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 300%; /* 100% para cada imagem, 3 imagens = 300% */
 }
-
 .carousel-slide img {
-    width: 100%; /* Ajustando para que as imagens ocupem todo o espaço disponível */
-    height: auto; /* Mantendo a proporção original */
-    object-fit: cover; /* Para garantir que a imagem cubra todo o espaço sem distorção */
+    width: 33.33%; /* Cada imagem ocupa 1/3 do contêiner */
+    height: auto;
+    display: block;
 }
-
 .carousel-button {
     position: absolute;
     top: 50%;
@@ -78,54 +77,48 @@ nav {
     font-size: 18px;
     border-radius: 50%;
 }
-
 .carousel-button.left {
     left: 10px;
 }
-
 .carousel-button.right {
     right: 10px;
 }
 
-h1, p {
-    font-family: "Acme", sans-serif;
-    text-align: center;
-    margin: 20px 0; /* Espaçamento entre os elementos */
+h1{
+    font-family: "Acme", sans-serif; 
 }
-
-p {
-    font-size: 1.2rem; 
-}
-
-body {
-    font-family: 'Acme', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
+.texto{
+    font-family:"Acme", sans-serif; 
+    font-size: 25px;
+    margin: 400px;
 }
 
 footer {
     background-color: rgb(1, 92, 1);
-    color: white;
     text-align: center;
     padding: 1rem 0;
-    width: 100%;
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
+
+
 .social-icons {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-top: 10px; 
+    margin-top: 0.5rem;
 }
 
 .icon {
     width: 30px;
     height: 30px;
+  
+}
+.rodape{
+    color: white;
 }
 
-.rodape {
-    margin-top: 10px; /* Ajustando a margem do topo */
-}
+
+
