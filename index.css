@@ -1,9 +1,11 @@
 
 
+
 /* Estilos gerais */
 body {
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; 
     
 }
 
@@ -161,8 +163,8 @@ footer {
 .materia{
     display: flex;
     flex-direction:row;
-    gap: 150px;
-    margin: 10px;
+    gap: 210px;
+    margin: 60px;
 
 }
 
