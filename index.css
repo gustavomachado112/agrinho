@@ -1,5 +1,5 @@
-/* Reset de margem e padding padrão */
-* {
+
+ {
     margin: 0;
     padding: 0px;
     }
@@ -37,7 +37,7 @@ header {
     font-family: "Acme", sans-serif;
     }
     
-    /* CSS para o menu */
+    
 
 
 
@@ -60,7 +60,7 @@ a {
 .main-title {
     text-align: center;
     margin: 20px 0;
-    font-size: 1.5rem; /* Ajuste do tamanho da fonte */
+    font-size: 1.5rem; 
     font-family: "Lobster", cursive;
 }
 
@@ -81,16 +81,16 @@ a {
     height: auto;
     margin: 0 auto 20px;
     display: block;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
-    border-radius: 15px; /* Arredondamento das bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 15px; 
 }
 
 .content-text {
     font-size: 1.2rem;
     margin: 0 auto;
     max-width: 800px;
-    text-align: justify; /* Justifica o texto */
-    line-height: 1.6; /* Espaçamento entre linhas */
+    text-align: justify; 
+    line-height: 1.6; 
     font-family: "Acme", sans-serif;
 }
 
@@ -116,30 +116,30 @@ footer {
 }
 
 .container {
-    text-align: center; /* Centraliza o conteúdo dentro do container */
-    margin-top: 20px; /* Margem superior para separar do cabeçalho */
+    text-align: center; 
+    margin-top: 20px; 
 }
 
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: auto; /* Centraliza horizontalmente */
+    margin: auto; 
 }
 
 .comidaSlides {
     display: none;
-    width: 100%; /* Garante que a imagem ocupe toda a largura do container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
-    border-radius: 15px; /* Arredondamento das bordas */
+    width: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 15px; 
 }
 
 img {
     vertical-align: middle;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento */
-    border-radius: 15px; /* Arredondamento das bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 15px; 
 }
 
-/* Efeito de fade */
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
