@@ -155,5 +155,11 @@ footer {
 
 .tradicao{
     position: relative;
-    left: 800px; 
+    left: 800px;
+    width:100px;
+    height:100px;
+}
+.comida{
+     width:100px;
+    height:100px;
 }
