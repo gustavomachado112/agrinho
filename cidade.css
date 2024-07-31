@@ -1,7 +1,9 @@
+
 /* Estilos gerais */
 body {
     padding: 0;
     margin: 0;
+    
 }
 
 /* Cabeçalho */
@@ -50,7 +52,7 @@ a {
     position: relative;
     width: 100%;
     margin: 0 auto;
-    height: auto;
+    height: 500px;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -95,11 +97,13 @@ h1 {
     text-align: center;
     margin: 20px;
 }
-
+p{
+      font-family: "Acme", sans-serif;
+}
 .texto {
     font-family: "Acme", sans-serif;
     font-size: 18px;
-    margin: 20px;
+    margin: 150px;
     text-align: justify;
 }
 
@@ -149,5 +153,7 @@ footer {
     }
 }
 
-
-
+.tradicao{
+    position: relative;
+    left: 800px; 
+}
