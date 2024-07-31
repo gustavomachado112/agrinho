@@ -1,4 +1,5 @@
 
+
 header{
     background-color: rgb(1, 92, 1);
         padding: 0 20px;
@@ -86,7 +87,8 @@ h1{
 }
 p{
     font-family:"Acme", sans-serif; 
-    font-size: 30px;
+    font-size: 20px;
+    margin: 300px;
 }
 footer {
     background-color: rgb(1, 92, 1);
@@ -107,6 +109,3 @@ footer {
 .icon {
     width: 30px;
     height: 30px;
-
-
-
