@@ -25,34 +25,7 @@
 }
 
 
-header{
-    background-color: rgb(1, 92, 1);
-        padding: 0 20px;
-    margin:0;
 
-}
-nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
-}
-
-.nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-    color: white;
-}
-
-
-
-  nav,.nav-links {
-    display: flex;
-    list-style: none;
-    font-size: 1.5rem;
-    gap: 2rem;
-    margin-left: auto;
-}
 
 
 a {
