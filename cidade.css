@@ -49,24 +49,27 @@ a {
     width: 150px;
 }
 
- .carousel-container {
+.carousel-container {
     position: relative;
     width: 80%;
-    width: 100%;
+    margin: 0 auto; /* Centralizando o container */
     height: 600px;
     overflow: hidden;
     border-radius: 10px;
 }
+
 .carousel-slide {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 300%; /* 100% para cada imagem, 3 imagens = 300% */
+    width: 300%; 
 }
+
 .carousel-slide img {
-    width: 33.33%; /* Cada imagem ocupa 1/3 do contêiner */
-    height: auto;
-    display: block;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
+
 .carousel-button {
     position: absolute;
     top: 50%;
@@ -80,12 +83,15 @@ a {
     font-size: 18px;
     border-radius: 50%;
 }
+
 .carousel-button.left {
     left: 10px;
 }
+
 .carousel-button.right {
     right: 10px;
 }
+
 
 h1{
     font-family: "Acme", sans-serif; 
