@@ -37,12 +37,6 @@ nav {
     height: 17vh;
 }
 
-.logo {
-    font-size: 50px;
-    color: white;
-    font-family: "Acme", sans-serif;
-}
-
 .nav-links {
     gap: 2rem;
     list-style: none;
@@ -59,7 +53,7 @@ nav {
     gap: 2rem;
     margin-left: auto;
 }
-}
+
 
 a {
     color: rgb(255, 255, 255);
