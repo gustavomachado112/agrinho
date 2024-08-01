@@ -1,4 +1,5 @@
 
+
 *{
     margin: 0;
     padding: 0;
@@ -36,14 +37,6 @@ header {
     display: flex;
     align-items: center;
 }
-
-
-    
-  
-
-
-
-
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -118,7 +111,7 @@ a {
     display: block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     border-radius: 15px; 
-
+}
 .content-text {
     font-size: 1.2rem;
     margin: 0 auto;
@@ -199,3 +192,27 @@ img {
 .oi{
     color:white
 }
+footer {
+    background-color: rgb(1, 92, 1);
+    text-align: center;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+p{
+    font-family:"Acme", sans-serif;
+}
+
