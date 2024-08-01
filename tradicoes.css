@@ -31,8 +31,6 @@ header {
     padding: 0 20px;
 }
 
-
-
 .logo-container {
     display: flex;
     align-items: center;
@@ -51,8 +49,6 @@ a {
     width: 150px;
 }
 
-
-
 .logo-container {
     display: flex;
     align-items: center;
@@ -64,18 +60,6 @@ a {
     font-family: "Acme", sans-serif;
     margin-left: 20px;
 }
-
-
-
-
-
-
-a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-family: "Acme", sans-serif;
-}
-
 .navbar-list li a:hover {
     background-color: aliceblue;
     color: red;
