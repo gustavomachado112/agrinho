@@ -199,3 +199,8 @@ img {
 .oi{
     color:white
 }
+.footer-container {
+    flex-shrink: 0;
+    margin: 0%;
+    padding: 0%;
+}
