@@ -1,13 +1,11 @@
 
-
-
-
 /* Estilos gerais */
 body {
     padding: 0;
     margin: 0;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     overflow: auto;
+    font-family: "Acme", sans-serif;
 }
 
 /* Cabeçalho */
@@ -22,22 +20,12 @@ nav {
     align-items: center;
     height: 17vh;
     display: flex;
-    flex-wrap: wrap; /* Para garantir que os itens se ajustem em telas menores */
+    flex-wrap: wrap;
 }
 
 .logo {
     font-size: 30px;
     color: white;
-    font-family: "Acme", sans-serif;
-    position: relative;
-    right: 600px;
-}
-
-
-
-a {
-    color: white;
-    text-decoration: none;
     font-family: "Acme", sans-serif;
 }
 
@@ -52,7 +40,7 @@ a {
     width: 100%;
     margin: 0 auto;
     height: 500px;
-    overflow:hidden;
+    overflow: hidden;
     border-radius: 10px;
 }
 
@@ -61,12 +49,11 @@ a {
     transition: transform 0.5s ease-in-out;
 }
 
-img {
-    width: 1000px;
-    height:500px;
+.contanier img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
 }
-
 
 /* Texto */
 h1 {
@@ -74,13 +61,10 @@ h1 {
     text-align: center;
     margin: 20px;
 }
-p{
-      font-family: "Acme", sans-serif;
-}
+
 .texto {
-    font-family: "Acme", sans-serif;
     font-size: 18px;
-    margin: 150px;
+    margin: 20px;
     text-align: justify;
 }
 
@@ -128,47 +112,53 @@ footer {
         font-size: 16px;
         margin: 10px;
     }
+
+    .materia, .descricao {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .materia img, .descricao p {
+        width: 80%;
+    }
 }
 
-.tradicao{
-    width:500px;
-    height:500px;
+.tradicao, .comida {
+    width: 500px;
+    height: 500px;
 }
-.materia{
+
+.materia {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     gap: 210px;
     margin: 60px;
-
 }
 
-.comida{
-     width:500px;
-    height:500px;
- 
-}
-.descricao{
+.descricao {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     gap: 200px;
-    font-size:20px ;
+    font-size: 20px;
     margin: 60px;
     position: relative;
     bottom: 50px;
 }
-.botao1{
-    background-color: #4CAF50; /* Cor de fundo */
-color: white; /* Cor do texto */
-padding: 10px 20px; /* Espaçamento interno */
-border: none; /* Remove a borda padrão */
-border-radius: 5px; /* Borda arredondada */
-cursor: pointer; /* Cursor ao passar por cima */
-position: relative;
-left: 20%; 
-/* Centraliza o texto */
-text-decoration: none; /* Remove sublinhado */
-display: inline-block; /* Exibe como bloco inline */
-font-size: 16px; /* Tamanho da fonte */
-transition-duration: 0.4s; /* Duração da transição */
-box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Sombra */
+
+.botao1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 20%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
