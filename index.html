@@ -1,12 +1,13 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cidade.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <title>agrinho.com</title>
     <link rel="icon" type="image/page" href="https://i.ibb.co/mcDvsQy/eco-removebg-preview.png">
@@ -16,22 +17,17 @@
     <nav id="desktop-nav">
         <img class="log" src="https://i.ibb.co/mcDvsQy/eco-removebg-preview.png" alt="eco-removebg-preview">
         <div class="logo">ECO NATURE</div>
-        <div>
-          <ul class="nav-links">
-                <li><a href="index.html">INICIO</a></li>
-          </ul>
-        </div>
+       
       </nav>
 </header>
 
-<div class="carousel-container">
-    <div class="carousel-slide">
-        <img src="Default_alimento_indo_do_campo_a_cidade_com_um_camianhao_1.jpg" alt="Imagem 1">
-        <img src="Default_processo_de_emblagem_de_alimentos_rural_como_batata_1.jpg" alt="Imagem 2">
-        <img src="Default_camianhao_de_porte_gramde_levando_alimentos_na_carreta_1 (1).jpg" alt="Imagem 3">
+<div class="carousel">
+    <div class="contanier" id="img">
+        <img src="https://i.ibb.co/WnvLWCZ/Design-sem-nome-3.png"  alt="Imagem 1">
+        <img src="https://i.ibb.co/jTGwjr5/Design-sem-nome-4.png"  alt="Imagem 2">
+        <img src="https://i.ibb.co/wWYm0xK/Design-sem-nome-5.png"  alt="Imagem 2">
+        <img src="https://i.ibb.co/kMgrQJB/Design-sem-nome-6.png" alt="Imagem 3">
     </div>
-    <button class="carousel-button left" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="carousel-button right" onclick="moveSlide(1)">&#10095;</button>
 </div>
 <br><br>
 <br><br>
@@ -89,19 +85,25 @@
         <a href="https://github.com" target="_blank">
             <img src="icons8-github-50.png" alt="GitHub" class="icon">
         </a>
+        <a href="suporte.html"><button class="botao1">SUPORTE</button></a>
+        
     </div>
 </footer>
 
 <script>
-    let index = 0;
-    const totalSlides = document.querySelectorAll('.carousel-slide img').length;
-    const slideWidth = 100 / totalSlides; // Percentual para cada slide
+    let idx = 0;
+    const imgs = document.getElementById("img");
+    const img = document.querySelectorAll("#img img"); // Corrigido para selecionar apenas as imagens
 
-    function moveSlide(step) {
-        index = (index + step + totalSlides) % totalSlides;
-        const slides = document.querySelector('.carousel-slide');
-        slides.style.transform = `translateX(${-index * slideWidth}%)`;
+    function carrossel() {
+        idx++;
+        if (idx >= img.length) { // Corrigido para garantir que o índice não ultrapasse o número de imagens
+            idx = 0;
+        }
+        imgs.style.transform = `translateX(${-idx * 200}px)`; // Corrigido para aplicar a transformação
     }
+
+    setInterval(carrossel, 1800);
 </script>
 </body>
 </html>
